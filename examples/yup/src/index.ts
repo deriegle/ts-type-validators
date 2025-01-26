@@ -16,4 +16,25 @@ export const examples = {
       return { success: false, errors: [`${error}`] };
     }
   },
+  address: (input) => {
+    try {
+      const data = yup
+        .object({
+          street: yup.string().required(),
+          street2: yup.string().optional(),
+          city: yup.string().required(),
+          state: yup.string().length(2).required(),
+          zip: yup.string().required().min(5),
+        })
+        .validateSync(input, { strict: true });
+
+      return { success: true, data };
+    } catch (error) {
+      if (error instanceof yup.ValidationError) {
+        return { success: false, errors: [error.message] };
+      }
+
+      return { success: false, errors: [`${error}`] };
+    }
+  },
 } satisfies Examples;

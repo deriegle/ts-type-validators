@@ -11,4 +11,15 @@ export type Examples = {
    * It does not need to do any minimum length validation, etc.
    */
   basicString: ValidationFunc;
+  /**
+   * This should validate that the input is an address object:
+   * {
+   *  street: string;
+   *  street2?: string;
+   *  city: string;
+   *  state: "CA" | "NY" | "TX" | "FL" | etc...;
+   *  zip: string;
+   * }
+   */
+  address: ValidationFunc;
 };
