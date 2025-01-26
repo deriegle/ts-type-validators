@@ -4,5 +4,11 @@
     "shared",
     "tests"
   ],
-  "packageManager": "npm@10.2.4"
+  "packageManager": "npm@10.2.4",
+  "scripts": {
+    "test": "turbo run test"
+  },
+  "dependencies": {
+    "turbo": "2.3.4"
+  }
 }

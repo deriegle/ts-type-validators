@@ -1,6 +1,8 @@
 {
   "name": "@examples/yup",
   "version": "1.0.0",
+  "types": "src/index.ts",
+  "main": "src/index.ts",
   "scripts": {},
   "dependencies": {
     "@repo/shared": "*",

@@ -5,6 +5,9 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@examples/typescript": "*",
+    "@examples/yup": "*",
+    "@examples/zod": "*",
     "vitest": "3.0.4"
   }
 }
