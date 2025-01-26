@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@examples/arktype": "*",
+    "@examples/class-validator": "*",
     "@examples/effect": "*",
     "@examples/typebox": "*",
     "@examples/typescript": "*",

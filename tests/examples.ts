@@ -1,4 +1,5 @@
 import { examples as arktypeExamples } from "@examples/arktype";
+import { examples as classValidatorExamples } from "@examples/class-validator";
 import { examples as effectExamples } from "@examples/effect";
 import { examples as typeboxExamples } from "@examples/typebox";
 import { examples as typescriptExamples } from "@examples/typescript";
@@ -8,6 +9,7 @@ import { type Examples } from "@repo/shared";
 
 type Libraries =
   | "arktype"
+  | "class-validator"
   | "effect"
   | "typebox"
   | "typescript"
@@ -16,6 +18,7 @@ type Libraries =
 
 export const libraries = [
   "arktype",
+  "class-validator",
   "effect",
   "typebox",
   "typescript",
@@ -25,6 +28,7 @@ export const libraries = [
 
 export const examples = {
   arktype: arktypeExamples,
+  "class-validator": classValidatorExamples,
   effect: effectExamples,
   typebox: typeboxExamples,
   typescript: typescriptExamples,
