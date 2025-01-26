@@ -1,7 +1,14 @@
 import { Examples } from "@repo/shared";
 import { type } from "arktype";
-import { toResult } from "./toResult";
 
 export const examples = {
-  basicString: (i) => toResult(type("string"), i),
+  basicString: (input) => {
+    const result = type("string")(input);
+
+    if (result instanceof type.errors) {
+      return { success: false, errors: [result.summary] };
+    }
+
+    return { success: true, data: result };
+  },
 } satisfies Examples;
