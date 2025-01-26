@@ -1,4 +1,4 @@
-import { Examples } from "@repo/shared";
+import { type Examples } from "@repo/shared";
 import { Schema } from "effect";
 import { isLeft } from "effect/Either";
 

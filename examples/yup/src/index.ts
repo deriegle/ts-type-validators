@@ -1,5 +1,5 @@
 import * as yup from "yup";
-import { Examples } from "@repo/shared";
+import { type Examples } from "@repo/shared";
 
 export const examples = {
   basicString: (input) => {

@@ -6,6 +6,7 @@
   ],
   "packageManager": "npm@10.2.4",
   "scripts": {
+    "type-check": "turbo run type-check",
     "test": "turbo run test"
   },
   "dependencies": {
