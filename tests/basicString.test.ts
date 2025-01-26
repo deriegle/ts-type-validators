@@ -18,16 +18,21 @@ describe("basicString", () => {
       async (input) => {
         const result = await validation(input);
 
-        expect(result.success).toBe(true);
-        assert(result.success); // type assertion to be able to access result.data
-        expect(result.data).toBe(input);
+        expect(result).toMatchObject({
+          success: true,
+          data: input,
+        });
       }
     );
 
     test.each(invalidInputs)('Input: "%s" should be invalid', async (input) => {
       const result = await validation(input);
 
-      expect(result.success).toBe(false);
+      expect(result).toMatchObject({
+        success: false,
+        errors: expect.any(Array),
+      });
+
       assert(!result.success); // type assertion to be able to access result.errors
       expect(result.errors.length).toBeGreaterThan(0);
     });

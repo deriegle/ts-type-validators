@@ -1,7 +1,7 @@
 import { Examples } from "@repo/shared";
-import { type } from "arktype";
+import { Schema } from "effect";
 import { toResult } from "./toResult";
 
 export const examples = {
-  basicString: (i) => toResult(type("string"), i),
+  basicString: (i) => toResult(Schema.String, i),
 } satisfies Examples;

@@ -5,6 +5,9 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@examples/arktype": "*",
+    "@examples/effect": "*",
+    "@examples/typebox": "*",
     "@examples/typescript": "*",
     "@examples/yup": "*",
     "@examples/zod": "*",
