@@ -2,5 +2,9 @@
   "name": "@examples/zod",
   "version": "1.0.0",
   "scripts": {},
-  "dependencies": {}
+  "dependencies": {
+    "@repo/shared": "*",
+    "typescript": "5.7.3",
+    "zod": "3.24.1"
+  }
 }

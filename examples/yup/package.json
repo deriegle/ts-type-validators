@@ -2,5 +2,9 @@
   "name": "@examples/yup",
   "version": "1.0.0",
   "scripts": {},
-  "dependencies": {}
+  "dependencies": {
+    "@repo/shared": "*",
+    "yup": "1.6.1",
+    "typescript": "5.7.3"
+  }
 }

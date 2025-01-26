@@ -1,7 +1,7 @@
 {
   "workspaces": [
     "examples/*",
-    "shared/*",
+    "shared",
     "tests"
   ],
   "packageManager": "npm@10.2.4"
